@@ -32,3 +32,23 @@
 	background-color: #f9c13e;
 	color: black;
 }
+
+.createform {
+	margin: auto;
+	text-align: center;
+}
+
+.createform input {
+	width: 28em;
+	margin: 5px 6px
+}
+
+.createform select {
+	width: 10em;
+	text-align: center;
+	margin: 5px 6px;
+}
+
+.createform option {
+	text-align: center;
+}
