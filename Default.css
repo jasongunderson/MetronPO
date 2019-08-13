@@ -1,0 +1,54 @@
+/* Wrapper style */
+.wrapper {
+	width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #838;
+	overflow: hidden;
+	margin: auto;
+	width: 17.6em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 24px;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #bc59f9;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #f9c13e;
+	color: black;
+}
+
+.createform {
+	margin: auto;
+	text-align: center;
+}
+
+.createform input {
+	width: 28em;
+	margin: 5px 6px
+}
+
+.createform select {
+	width: 10em;
+	text-align: center;
+	margin: 5px 6px;
+}
+
+.createform option {
+	text-align: center;
+}
