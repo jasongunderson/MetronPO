@@ -3,7 +3,7 @@
 	width: 100%;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a purple background color to the top navigation */
 .topnav {
 	background-color: #838;
 	overflow: hidden;
@@ -39,7 +39,7 @@
 }
 
 .createform input {
-	width: 28em;
+	width: 24em;
 	margin: 5px 6px
 }
 

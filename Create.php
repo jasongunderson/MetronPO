@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
 <link rel="stylesheet" type="text/css" href="default.css">
+
+<?php
+//uncomment when login is working
+//include 'session_check.php'
+?>
+
 </head>
 
 <body>
@@ -11,8 +17,8 @@
 
 	<!-- Navigation buttons -->
 	<div class="topnav">
-		<a class="active" href "Create.html">Create</a>
-		<a href="Review.html">Review</a>
+		<a class="active" href "Create.php">Create</a>
+		<a href="Review.php">Review</a>
 	</div>
 	
 	<!-- Main Purchase Order Form -->
@@ -31,15 +37,17 @@
 				<option value="Lamont">Lamont</option>
 			</select><br>
 			Vendor name:<br>
-			<input type="text" name="vendor"><br>
+			<input type="text" name="vendor" required><br>
 			Item description:<br>
-			<input type="text" name="item"><br>
+			<input type="text" name="item" required><br>
+			Total Cost:<br>
+			<input type="number" name="quantity" min="0" step="0.01" required><br>
 			Quantity:<br>
-			<input type="number" name="quantity" min="0"><br>
+			<input type="number" name="quantity" min="0" required><br>
 			Reason for request:<br>
-			<textarea rows="4" cols="45"></textarea><br>
+			<textarea rows="4" cols="45" required></textarea><br>
 			Date needed:<br>
-			<input type="date" name="date2" style="width:10em"><br>
+			<input type="date" name="date2" style="width:10em" required><br>
 			<input type="submit" value="Submit" style="width:10em">
 		</form>
 	</div>

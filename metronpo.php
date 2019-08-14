@@ -16,8 +16,9 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #582768;
   color: white;
+  font-size: 1.5em;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -36,6 +37,7 @@ button:hover {
 
 h2 {
   text-align: center;
+  color: #582768;
 }
 
 .cancelbtn {
@@ -77,11 +79,11 @@ span.psw {
 </head>
 <body>
 
-<h2>Metron PO Request Login</h2>
+<h2>Metron Purchase Order System Login</h2>
 
 <form action="/action_page.php" class="mainContainer">
   <div class="imgcontainer">
-    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="images/MetronLogo.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
@@ -92,14 +94,6 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 
