@@ -6,8 +6,8 @@
 <link rel="stylesheet" type="text/css" href="default.css">
 
 <?php
-//uncomment when login is working
-//include 'session_check.php'
+//check for active session
+include 'session_check.php'
 ?>
 
 </head>

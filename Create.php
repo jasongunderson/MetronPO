@@ -7,7 +7,7 @@
 
 <?php
 //uncomment when login is working
-//include 'session_check.php'
+include 'session_check.php'
 ?>
 
 </head>
@@ -19,6 +19,7 @@
 	<div class="topnav">
 		<a class="active" href "Create.php">Create</a>
 		<a href="Review.php">Review</a>
+		<!-- <a href="Logout.php">Logout</a> -->
 	</div>
 	
 	<!-- Main Purchase Order Form -->
