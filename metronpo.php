@@ -81,7 +81,7 @@ span.psw {
 
 <h2>Metron Purchase Order System Login</h2>
 
-<form action="/action_page.php" class="mainContainer">
+<form action="action_page.php" class="mainContainer" method="post">
   <div class="imgcontainer">
     <img src="images/MetronLogo.png" alt="Avatar" class="avatar">
   </div>
