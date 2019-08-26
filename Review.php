@@ -20,6 +20,13 @@ include 'session_check.php'
 		<a href="Create.php">Create</a>
 		<a class="active" href="Review.php">Review</a>
 	</div>
+	<div>
+		<?php
+		echo $_SESSION["user"]."<br>";
+		echo $_SESSION["facility"]."<br>";
+		echo $_SESSION["department"]."<br>";
+		?>
+	</div>
 </div>
 </body>
 
