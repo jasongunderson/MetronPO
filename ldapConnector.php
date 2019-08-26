@@ -14,18 +14,12 @@ if(isset($_POST["userID"]) && isset($_POST["passwd"])){
 	$userPass=$_POST["passwd"];
 
 	if(!$ldapbind=ldap_bind($link,$userID,$userPass)){
-		echo "could not bind<br>";
+		echo "could not bind to server<br>";
 		session_destroy();
-		echo "<form action=\"http://10.1.25.23/ldap/metronpo.php\" method=\"get\"><br>";
-		echo "<button type=\"submit\">Home</button>";
 	}
 	else{
 		echo "success<br>";
 		echo $userID."<br>";
-		//Print cleaned up user name
-		echo "<form action=\"http://10.1.25.23/ldap/metronpo.php\" method=\"get\"><br>";
-		//Button return to home page
-		echo "<button type=\"submit\">Home</button><br><br>";
 		// filter objects by User Principal Name = userID
 		$filter="(userprincipalname=".$userID.")";
 		// do an ldap search of entire metron domain for userID
@@ -43,7 +37,7 @@ if(isset($_POST["userID"]) && isset($_POST["passwd"])){
 		$_SESSION["user"] = $user;
 		$_SESSION["facility"] = $facility;
 		$_SESSION["department"] = $department;
-		header('Location: create.php');
+		header('Location: Create.php');
 		}// End of else for successful bind
 	}// end of user id and password is set check
 }// end of try
