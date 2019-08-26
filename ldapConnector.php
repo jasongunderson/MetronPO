@@ -41,6 +41,7 @@ if(isset($_POST["userID"]) && isset($_POST["passwd"])){
 		$_SESSION["user"] = $user;
 		$_SESSION["facility"] = $facility;
 		$_SESSION["department"] = $department;
+		print("<pre>".print_r($entries,true)."</pre>");
 		print_r($entries);
 		// header('Location: Create.php');
 		}// End of else for successful bind
