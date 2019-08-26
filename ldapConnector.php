@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION)){
+ session_start();
+}
+
 try{
 if(isset($_POST["userID"]) && isset($_POST["passwd"])){
 	//Replace everything after including "@" with nothing
