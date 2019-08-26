@@ -1,9 +1,14 @@
+<?php
+if(!isset($_SESSION)){
+ session_start();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
-<link rel="stylesheet" type="text/css" href="default.css">
+<link rel="stylesheet" type="text/css" href="Default.css">
 
 <?php
 //check for active session
