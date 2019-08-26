@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
-<link rel="stylesheet" type="text/css" href="10.1.25.23/default.css">
+<link rel="stylesheet" type="text/css" href="default.css">
 
 <?php
 //uncomment when login is working
