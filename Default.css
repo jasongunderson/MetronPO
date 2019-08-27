@@ -58,14 +58,14 @@
 	margin: 0px;
 }
 
-#request_form_id dir {
-	border-bottom: 1px solid #91bab0;
-}
+/*.tablerow {
+	border-bottom: 2px solid #0039e6;
+}*/
 
 .tablerow td{
 	padding: 10px;
-/*	border-bottom: 1px solid #91bab0;
-	margin: 0px;*/
+	border-bottom: 1px solid #91bab0;
+	margin: 0px;
 }
 
 #requests_table_id {
