@@ -54,7 +54,7 @@
 }
 
 .tableheader{
-	border-bottom: 2px solid ##0039e6;
+	border-bottom: 2px solid #0039e6;
 }
 
 .tablerow td{
@@ -62,7 +62,7 @@
 }
 
 .tablerow {
-	border-bottom: 2px solid ##0039e6;
+	border-bottom: 2px solid #0039e6;
 }
 
 #requests_table_id {
