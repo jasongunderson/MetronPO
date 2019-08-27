@@ -37,18 +37,17 @@ include 'session_check.php'
         $pdo= new PDO($connString,$username,$password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Connected Successfully";
+        // $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
+        $sql = "SELECT * FROM requests";
+        $statement = $pdo->prepare($sql);
+        // $statement->bindValue(1, $value);
+        $statement->execute();
+        $pdo = null;
     }
     catch(PDOException $e){
     	echo "Connection failed: ".$e->getMessage();
     }
-        // $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
-        // $sql = "SELECT * FROM requests";
-        // $statement = $pdo->prepare($sql);
-        // // $statement->bindValue(1, $value);
-        // $statement->execute();
         
-        // $pdo = null;
-        // echo "before if statement<br>\n";
         if($statement->rowCount() == 0)
         {
           echo "No Results Found\n";
