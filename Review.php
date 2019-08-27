@@ -31,15 +31,16 @@ include 'session_check.php'
 		<?php
 		echo "before running pdo conection<br>\n";
 		$connString = "mysql:host=localhost;dbname=metronpo";
-        $username="metronpo";
+        $username="";
         $password="N0tTh3P@ssword";
 
         $value=$_SESSION["facility"];
         echo $value."<br>";
         $pdo= new PDO($connString,$username,$password);
-        $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
+        // $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
+        $sql = "SELECT * FROM requests";
         $statement = $pdo->prepare($sql);
-        $statement->bindValue(1, $value);
+        // $statement->bindValue(1, $value);
         $statement->execute();
         
         $pdo = null;
