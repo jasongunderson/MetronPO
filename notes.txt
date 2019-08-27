@@ -1,0 +1,52 @@
+mysql create user
+CREATE USER ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
+GRANT ALL PRIVILEGES ON *.* TO ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
+GRANT ALL PRIVILEGES ON *.* TO 'metronpo'@'localhost' IDENTIFIED BY 'N0tTh3P@ssword';
+
+CREATE TABLE users(
+uid CHAR(21) PRIMARY KEY,
+first CHAR(20),
+last CHAR(20),
+pass CHAR(62),
+facility CHAR(20),
+admin INT
+);
+
+
+CREATE TABLE requests(
+rid INT PRIMARY KEY,
+uid CHAR(21),
+facility CHAR(20),
+department CHAR(20),
+vendor CHAR(32),
+description CHAR(32),
+cost DECIMAL(10,2),
+quantity INT,
+reason CHAR(255),
+date_submit DATE,
+date_needed DATE,
+admin DATE,
+coo DATE,
+cfo DATE
+);
+
+INSERT INTO users(uid,first,last,facility,admin) VALUES('jgunderson','Jason','Gunderson','Corporate',1);
+
+
+INSERT INTO users(uid,first,last,facility,admin) VALUES('mpiersma','Matt','Piersma','Corporate',1);
+
+
+
+INSERT INTO requests(rid,uid,facility,department,vendor,quantity) VALUES('0','Matt Piersma','Corporate','IT','Microsoft','10');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,quantity) VALUES('1','Jason Gunderson','Corporate','IT','Microsoft','5');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,quantity) VALUES('2','Igor Soljan','Corporate','IT','Microsoft','100');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,quantity,cost) VALUES('4','Lonie Collins','Belding Facility','Maintenance','Granger','200','200.00');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,quantity,cost,date_submit) VALUES('5','Lonie Collins','Belding Facility','Maintenance','Granger','100','349.95','2019-05-22');
+
+
+
+
