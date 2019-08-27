@@ -53,8 +53,16 @@
 	text-align: center;
 }
 
+.tableheader{
+	border-bottom: 2px solid #4ddbff;
+}
+
 .tablerow td{
 	padding: 10px;
+}
+
+.tablerow {
+	border-bottom: 2px solid #4ddbff;
 }
 
 #requests_table_id {
