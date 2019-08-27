@@ -48,7 +48,7 @@ include 'session_check.php'
           echo "No Results Found\n";
         }
         else{
-        	echo "results found \n"
+        	echo "results found \n";
 		echo "<form role=\"form\" class=\"requests_form_class\" action=\"\" id=\"request_form_id\">";
             echo "<table id=\"requests_table_id\" class=\"requests_table_class\">\n";
             echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Date</th>\n";
