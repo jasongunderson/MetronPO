@@ -58,16 +58,16 @@ include 'session_check.php'
           $result =  $statement;
              foreach($result as $row){
              	if($row[5]<500 && $row[9]>1){
-             		$style="style=\"background-color: #4dff4d;;\"";
+             		$style="style=\"background-color: #4dff4d\"";
              	}
              	elseif ($row[5]>=500 || $row[5]<5000) {
              		if($row[9]>1 && $row[10]>1){
-             			$style="style=\"background-color: #4dff4d;;\"";
+             			$style="style=\"background-color: #4dff4d\"";
              		}
              	}
              	elseif ($row[5]>=5000 && $row[9]!=null) {
              		if($row[10]>1 && $row[11]>1){
-             			$style="style=\"background-color: #4dff4d;;\"";
+             			$style="style=\"background-color: #4dff4d\"";
              		}
              	}
              	else{
