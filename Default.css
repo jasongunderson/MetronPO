@@ -56,3 +56,7 @@
 .tablerow td{
 	padding: 10px;
 }
+
+#requests_table_id {
+	margin: auto;
+}
