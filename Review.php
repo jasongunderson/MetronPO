@@ -29,7 +29,7 @@ include 'session_check.php'
 	</div>
 	<div>
 		<?php
-		echo "before running pdo conection\n";
+		echo "before running pdo conection<br>\n";
 		$connString = "mysql:host=localhost;dbname=metronpo";
         $username="metronpo";
         $password="N0tTh3P@ssword";
