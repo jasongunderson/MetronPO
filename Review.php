@@ -36,11 +36,10 @@ include 'session_check.php'
     try{
         $pdo= new PDO($connString,$username,$password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected Successfully";
-        // $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
-        $sql = "SELECT * FROM requests";
+        $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
+        // $sql = "SELECT * FROM requests";
         $statement = $pdo->prepare($sql);
-        // $statement->bindValue(1, $value);
+        $statement->bindValue(1, $value);
         $statement->execute();
         $pdo = null;
     }
