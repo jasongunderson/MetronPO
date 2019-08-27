@@ -57,7 +57,8 @@ include 'session_check.php'
             echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Department</th><th class=\"tableheader\">Vendor</th><th class=\"tableheader\">Discription</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Quantity</th><th class=\"tableheader\">Date Submit</th><th class=\"tableheader\">Date Needed</th><th class=\"tableheader\">Admin Auth</th><th class=\"tableheader\">COO Auth</th><th class=\"tableheader\">CFO Auth</th>\n";
           $result =  $statement;
              foreach($result as $row){
-             	if($row[5]<=500 && $row[9]!=NULL){$style="style=\"color:green;\""}
+             	if($row[5]<=500 && $row[9]!=null){$style="style=\"color:green;\""}
+             	else{$style=""}
               echo "<tr ".$style." class=\"tablerow\"><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td><td>".$row[6]."</td><td>".$row[7]."</td><td>".$row[8]."</td><td>".$row[9]."</td><td>".$row[10]."</td><td>".$row[11]."</td></tr>\n";
               
              }
