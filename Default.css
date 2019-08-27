@@ -52,3 +52,7 @@
 .createform option {
 	text-align: center;
 }
+
+.tablerow td{
+	padding: 10px;
+}
