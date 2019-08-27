@@ -54,7 +54,7 @@
 }
 
 .tableheader{
-	border-bottom: 2px solid #0039e6;
+	border-bottom: 1px solid #80ffff;
 }
 
 /*.tablerow {
@@ -63,7 +63,7 @@
 
 .tablerow td{
 	padding: 10px;
-	border-bottom: 2px solid #0039e6;
+	border-bottom: 1px solid #80ffff;
 }
 
 #requests_table_id {
