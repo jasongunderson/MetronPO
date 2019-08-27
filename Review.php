@@ -60,7 +60,7 @@ include 'session_check.php'
              	if($row[5]<500 && $row[9]>1){
              		$style="style=\"background-color: #4dff4d\"";
              	}
-             	elseif ($row[5]>=500 || $row[5]<5000) {
+             	elseif ($row[5]>=500 && $row[5]<5000) {
              		if($row[9]>1 && $row[10]>1){
              			$style="style=\"background-color: #4dff4d\"";
              		}
