@@ -35,15 +35,15 @@ include 'session_check.php'
         $password="N0tTh3P@ssword";
 
         $value=$_SESSION["facility"];
-        echo $value;
+        echo $value."<br>";
         $pdo= new PDO($connString,$username,$password);
         $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
         $statement = $pdo->prepare($sql);
         $statement->bindValue(1, $value);
         $statement->execute();
-                
+        
         $pdo = null;
-
+        echo "before if statement<br>\n";
         if($statement->rowCount() == 0)
         {
           echo "No Results Found\n";
