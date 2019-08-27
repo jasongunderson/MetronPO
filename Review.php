@@ -54,7 +54,7 @@ include 'session_check.php'
         else{
 		echo "<form role=\"form\" class=\"requests_form_class\" action=\"\" id=\"request_form_id\">";
             echo "<table id=\"requests_table_id\" class=\"requests_table_class\">\n";
-            echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Date</th>\n";
+            echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Department</th><th class=\"tableheader\">Vendor</th><th class=\"tableheader\">Discription</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Quantity</th><th class=\"tableheader\">Date Submit</th><th class=\"tableheader\">Date Needed</th><th class=\"tableheader\">Admin Auth</th><th class=\"tableheader\">COO Auth</th><th class=\"tableheader\">CFO Auth</th>\n";
           $result =  $statement;
              foreach($result as $row){
               echo "<tr class=\"tablerow\"><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td></tr>\n";
