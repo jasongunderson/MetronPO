@@ -58,22 +58,22 @@ include 'session_check.php'
           $result =  $statement;
              foreach($result as $row){
              	if($row[5]<500 && $row[9]>1){
-             		$style=",background-color: #4dff4d";
+             		$style="style=\"background-color: #4dff4d\"";
              	}
              	elseif ($row[5]>=500 || $row[5]<5000) {
              		if($row[9]>1 && $row[10]>1){
-             			$style=",background-color: #4dff4d";
+             			$style="style=\"background-color: #4dff4d\"";
              		}
              	}
              	elseif ($row[5]>=5000 && $row[9]!=null) {
              		if($row[10]>1 && $row[11]>1){
-             			$style=",background-color: #4dff4d";
+             			$style="style=\"background-color: #4dff4d\"";
              		}
              	}
              	else{
              		$style="";
              	}
-              echo "<tr style=\"border-bottom: 2px solid #0039e6".$style."\" class=\"tablerow\"><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td><td>".$row[6]."</td><td>".$row[7]."</td><td>".$row[8]."</td><td>".$row[9]."</td><td>".$row[10]."</td><td>".$row[11]."</td></tr>\n";
+              echo "<tr ".$style." class=\"tablerow\"><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td><td>".$row[6]."</td><td>".$row[7]."</td><td>".$row[8]."</td><td>".$row[9]."</td><td>".$row[10]."</td><td>".$row[11]."</td></tr>\n";
               
              }
              echo "</table>";
