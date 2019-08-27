@@ -40,6 +40,9 @@ INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,rea
 
 INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin) VALUES('11','Nurse Lady2','Belding Facility','Nursing','Wallgreens','Purple Hats','1000','Make Happy Residents','1100.00','2019-06-30','2019-09-19','2019-06-08');
 
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin) VALUES('12','Nurse Lady2','Belding Facility','Nursing','Bed Store','Resident Beds','2','Make Happy Residents','5200.00','2019-06-30','2019-09-19','2019-06-08');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin,coo,cfo) VALUES('13','Nurse Lady3','Belding Facility','Nursing','Wheelchair store','Resident wheelchairs','10','Need replacement wheelchairs','6200.86','2019-06-20','2019-09-27','2019-06-25','2019-06-27','2019-06-27');
 
 INSERT INTO users(uid,first,last,facility,admin) VALUES('jgunderson','Jason','Gunderson','Corporate',1);
 INSERT INTO users(uid,first,last,facility,admin) VALUES('mpiersma','Matt','Piersma','Corporate',1);
