@@ -35,6 +35,7 @@ include 'session_check.php'
         $password="N0tTh3P@ssword";
 
         $value=$_SESSION["facility"];
+        echo $value;
         $pdo= new PDO($connString,$username,$password);
         $sql = "SELECT uid,facility,cost,date_submit FROM requests WHERE facility = ?";
         $statement = $pdo->prepare($sql);
