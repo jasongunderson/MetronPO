@@ -29,7 +29,7 @@ include 'session_check.php'
 	</div>
 	<div>
 		<?php
-		echo "before running pdo conection";
+		echo "before running pdo conection\n";
 		$connString = "mysql:host=localhost;dbname=metronpo";
         $username="metronpo";
         $password="N0tTh3P@ssword";
@@ -45,9 +45,10 @@ include 'session_check.php'
 
         if($statement->rowCount() == 0)
         {
-          echo "<h2>No Results Found</h2>\n";
+          echo "No Results Found\n";
         }
         else{
+        	echo "results found \n"
 		echo "<form role=\"form\" class=\"requests_form_class\" action=\"\" id=\"request_form_id\">";
             echo "<table id=\"requests_table_id\" class=\"requests_table_class\">\n";
             echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Date</th>\n";
