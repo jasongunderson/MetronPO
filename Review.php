@@ -31,7 +31,7 @@ include 'session_check.php'
 		<?php
 		echo "before running pdo conection<br>\n";
 		$connString = "mysql:host=localhost;dbname=metronpo";
-        $username="";
+        $username="metronpo";
         $password="N0tTh3P@ssword";
 
         $value=$_SESSION["facility"];
