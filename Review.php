@@ -9,6 +9,7 @@ if(!isset($_SESSION)){
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
 <link rel="stylesheet" type="text/css" href="Default.css">
+<script type="text/JavaScript" src="authorize.js"></script>
 
 <?php
 //check for active session
