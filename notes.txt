@@ -1,7 +1,7 @@
 mysql create user
 CREATE USER ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
 GRANT ALL PRIVILEGES ON *.* TO ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
-GRANT ALL PRIVILEGES ON *.* TO 'metronpo'@'localhost' IDENTIFIED BY 'N0tTh3P@ssword';
+GRANT ALL PRIVILEGES ON *.* TO 'metronpo'@'%' IDENTIFIED BY 'N0tTh3P@ssword';
 
 CREATE TABLE users(
 uid CHAR(21) PRIMARY KEY,
@@ -30,13 +30,19 @@ coo DATE,
 cfo DATE
 );
 
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES('6','Lonie Collins','Belding Facility','Maintenance','Granger','Widget tool','10','Need to fix a device','349.95','2019-05-22','2019-05-29');
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES('7','Lonie Collins','Belding Facility','Maintenance','Granger','Widget bolts','100','Need to fix a device with bolts','49.95','2019-05-22','2019-05-29');
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES('8','Nurse Lady','Belding Facility','Nursing','Catheters-R-Us','Catheter tubes','200','Need to fix a device','150.50','2019-05-30','2019-06-15');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin) VALUES('9','Nurse Lady2','Belding Facility','Nursing','Needle Point','Syringe needles','300','Need to fix a device','225.00','2019-05-30','2019-06-15','2019-06-08');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin,coo) VALUES('10','Nurse Lady3','Belding Facility','Nursing','Wallgreens','Blue Pills','1000','Make Happy Residents','550.00','2019-04-05','2019-06-20','2019-06-01','2019-06-02');
+
+INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed,admin) VALUES('11','Nurse Lady2','Belding Facility','Nursing','Wallgreens','Purple Hats','1000','Make Happy Residents','1100.00','2019-06-30','2019-09-19','2019-06-08');
+
+
 INSERT INTO users(uid,first,last,facility,admin) VALUES('jgunderson','Jason','Gunderson','Corporate',1);
-
-
 INSERT INTO users(uid,first,last,facility,admin) VALUES('mpiersma','Matt','Piersma','Corporate',1);
-
-
-
 INSERT INTO requests(rid,uid,facility,department,vendor,quantity) VALUES('0','Matt Piersma','Corporate','IT','Microsoft','10');
 
 INSERT INTO requests(rid,uid,facility,department,vendor,quantity) VALUES('1','Jason Gunderson','Corporate','IT','Microsoft','5');
