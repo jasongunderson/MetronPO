@@ -57,14 +57,16 @@ include 'session_check.php'
             echo "<th class=\"tableheader\">Name</th><th class=\"tableheader\">Facility</th><th class=\"tableheader\">Department</th><th class=\"tableheader\">Vendor</th><th class=\"tableheader\">Discription</th><th class=\"tableheader\">Cost</th><th class=\"tableheader\">Quantity</th><th class=\"tableheader\">Date Submit</th><th class=\"tableheader\">Date Needed</th><th class=\"tableheader\">Admin Auth</th><th class=\"tableheader\">COO Auth</th><th class=\"tableheader\">CFO Auth</th>\n";
           $result =  $statement;
              foreach($result as $row){
+                // If cost is under $500 and admin has signed off then highlight
              	if($row[5]<500 && !is_null($row[9])){
              		$style="style=\"background-color: #4dff4d\"";
              	}
+                // If cost is under $5,000 and COO has signed off then highlight
              	elseif ($row[5]<5000) {
              		if(!is_null($row[10])){
-             	elseif ($row[5]<5000 && !is_null($row[10])) {
              		$style="style=\"background-color: #e9ed00\"";
-             	}
+                    }
+                 }
              	elseif (!is_null($row[11])) {
              		$style="style=\"background-color: #f0003c\"";
              	}
