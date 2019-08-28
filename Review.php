@@ -64,11 +64,11 @@ include 'session_check.php'
                 // If cost is under $5,000 and COO has signed off then highlight
              	elseif ($row[5]<5000) {
              		if(!is_null($row[10])){
-             		$style="style=\"background-color: #e9ed00\"";
+             		$style="style=\"background-color: #4dff4d\"";
                     }
                  }
              	elseif (!is_null($row[11])) {
-             		$style="style=\"background-color: #f0003c\"";
+             		$style="style=\"background-color: #4dff4d\"";
              	}
              	else{
              		$style="";
