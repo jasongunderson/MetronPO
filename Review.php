@@ -29,6 +29,7 @@ include 'session_check.php'
 	</div>
 	<div>
 		<?php
+
 		$connString = "mysql:host=localhost;dbname=metronpo";
         $username="metronpo";
         $password="N0tTh3P@ssword";
@@ -36,10 +37,16 @@ include 'session_check.php'
     try{
         $pdo= new PDO($connString,$username,$password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT uid,facility,department,vendor,description,cost,quantity,date_submit,date_needed,admin,coo,cfo FROM requests WHERE facility = ?";
-        // $sql = "SELECT * FROM requests";
-        $statement = $pdo->prepare($sql);
-        $statement->bindValue(1, $value);
+        if($_SESSION["facility"]=="Corporate"){
+            $sql = "SELECT * FROM requests";
+            $statement = $pdo->prepare($sql);
+        }
+        else{
+            $sql = "SELECT uid,facility,department,vendor,description,cost,quantity,date_submit,date_needed,admin,coo,cfo FROM requests WHERE facility = ?";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(1, $value);
+        }   
+
         $statement->execute();
         $pdo = null;
     }
