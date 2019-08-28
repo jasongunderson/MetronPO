@@ -60,10 +60,8 @@ include 'session_check.php'
              	if($row[5]<500 && !is_null($row[9])){
              		$style="style=\"background-color: #4dff4d\"";
              	}
-             	elseif ($row[5]<5000) {
-             		if(!is_null($row[10])){
-             			$style="style=\"background-color: #e9ed00\"";
-             		}
+             	elseif ($row[5]<5000 && !is_null($row[10])) {
+             		$style="style=\"background-color: #e9ed00\"";
              	}
              	elseif (!is_null($row[11])) {
              		$style="style=\"background-color: #f0003c\"";
