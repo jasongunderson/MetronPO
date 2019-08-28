@@ -60,15 +60,10 @@ include 'session_check.php'
              	if($row[5]<500 && !is_null($row[9])){
              		$style="style=\"background-color: #4dff4d\"";
              	}
-<<<<<<< HEAD
-             	elseif ($row[5]>=500 && $row[5]<5000) {
-             		if($row[9]>"1900-01-01" && $row[10]>"1900-01-01"){
-=======
              	elseif ($row[5]<5000) {
              		if(!is_null($row[10])){
->>>>>>> 2093d019b2d2ce00204a68e06aede4faa05a0579
-             			$style="style=\"background-color: #e9ed00\"";
-             		}
+             	elseif ($row[5]<5000 && !is_null($row[10])) {
+             		$style="style=\"background-color: #e9ed00\"";
              	}
              	elseif (!is_null($row[11])) {
              		$style="style=\"background-color: #f0003c\"";
