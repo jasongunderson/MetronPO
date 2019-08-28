@@ -38,7 +38,7 @@ include 'session_check.php'
         $pdo= new PDO($connString,$username,$password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if($_SESSION["facility"]=="Corporate"){
-            $sql = "SELECT * FROM requests";
+            $sql = "SELECT uid,facility,department,vendor,description,cost,quantity,date_submit,date_needed,admin,coo,cfo FROM requests";
             $statement = $pdo->prepare($sql);
         }
         else{
