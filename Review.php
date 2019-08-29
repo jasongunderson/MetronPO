@@ -1,8 +1,8 @@
 <?php
-if(!isset($_SESSION)){
- session_start();
-}
+//check for active session
+include 'session_check.php'
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,12 +11,6 @@ if(!isset($_SESSION)){
 <link rel="stylesheet" type="text/css" href="Default.css">
 <script type="text/JavaScript" src="jquery-3.2.1.min.js"></script>
 <script type="text/JavaScript" src="authorize.js"></script>
-
-<?php
-//check for active session
-include 'session_check.php'
-?>
-
 </head>
 
 <body>
@@ -26,6 +20,7 @@ include 'session_check.php'
 	<div class="topnav">
 		<a href="Create.php">Create</a>
 		<a class="active" href="Review.php">Review</a>
+		<a href="logout.php">Logout</a>
 	</div>
 	<div>
 		<?php

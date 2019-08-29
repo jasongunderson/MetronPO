@@ -1,12 +1,8 @@
 <?php
-
-// *** Check Session Cookie*****************
-if (session_status() !== PHP_SESSION_ACTIVE) {
-  session_start();
-}
+session_start();
 
 // ** If not logged in reirect to login page
-if(!isset($_SESSION)){
+if(!isset($_SESSION["user"])){
   header("Location: metronpo.php");
 
   

@@ -1,15 +1,14 @@
+<?php
+//uncomment when login is working
+include 'session_check.php'
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
 <link rel="stylesheet" type="text/css" href="default.css">
-
-<?php
-//uncomment when login is working
-include 'session_check.php'
-?>
-
 </head>
 
 <body>
@@ -19,7 +18,7 @@ include 'session_check.php'
 	<div class="topnav">
 		<a class="active" href "Create.php">Create</a>
 		<a href="Review.php">Review</a>
-		<!-- <a href="Logout.php">Logout</a> -->
+		<a href="logout.php">Logout</a>
 	</div>
 	
 	<!-- Main Purchase Order Form -->
