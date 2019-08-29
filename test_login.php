@@ -1,11 +1,6 @@
 <?php
 
 session_start();
-if(!is_null($_SESSION["user"])){
-	echo $_SESSION["user"]."<br>";
-	echo $_SESSION["facility"]."<br>";
-	echo $_SESSION["department"]."<br>"; 
-}
 
 if(!is_null($_POST["profile"])) {
 	
@@ -22,6 +17,10 @@ if(!is_null($_POST["profile"])) {
 	$_SESSION["user"] = $OPTIONS[$_POST["profile"]][0];
 	$_SESSION["facility"] = $OPTIONS[$_POST["profile"]][1];
 	$_SESSION["department"] = $OPTIONS[$_POST["profile"]][2];
+	
+	echo $_SESSION["user"]."<br>";
+	echo $_SESSION["facility"]."<br>";
+	echo $_SESSION["department"]."<br>"; 
 	}
 	
 ?>

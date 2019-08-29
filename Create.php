@@ -8,7 +8,7 @@ include 'session_check.php'
 <head>
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
-<link rel="stylesheet" type="text/css" href="default.css">
+<link rel="stylesheet" type="text/css" href="Default.css">
 </head>
 
 <body>
