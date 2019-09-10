@@ -28,7 +28,7 @@ include 'session_check.php'
 		<h1>Create Purchase Order</h1>
 		<form action="?" method="get">
 			Facility:<br>
-			<select name="facility">
+			<select id="facility" name="facility">
 				<option value="Belding">Belding</option>
 				<option value="Big Rapids">Big Rapids</option>
 				<option value="Cedar Springs">Cedar Springs</option>
