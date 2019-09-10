@@ -6,7 +6,7 @@ alert ("JavaScript is working");
 //---------------------------------------- Submit New PO Request--------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 
-    $("#Submit").click(function(){
+    $("Submit").click(function(){
     	event.preventDefault();
 
         var facility = $("facility").val();
