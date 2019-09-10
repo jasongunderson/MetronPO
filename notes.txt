@@ -1,17 +1,17 @@
+*****New Server
+sudo apt-get install apache2
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+sudo apt-get install php
+sudo apt-get install php-ldap
+sudo apt-get install php-mysql
+sudo apt-get install git
+sudo git clone https://github.com/jasongunderson/metronpo .
+
 mysql create user
 CREATE USER ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
 GRANT ALL PRIVILEGES ON *.* TO ‘metronpo’@’localhost’ IDENTIFIED BY ‘N0tTh3P@ssword’;
 GRANT ALL PRIVILEGES ON *.* TO 'metronpo'@'%' IDENTIFIED BY 'N0tTh3P@ssword';
-
-CREATE TABLE users(
-uid CHAR(21) PRIMARY KEY,
-first CHAR(20),
-last CHAR(20),
-pass CHAR(62),
-facility CHAR(20),
-admin INT
-);
-
 
 CREATE TABLE requests(
 rid INT PRIMARY KEY,

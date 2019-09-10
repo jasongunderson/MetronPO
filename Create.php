@@ -9,6 +9,8 @@ include 'session_check.php'
 <meta charset="UTF-8">
 <title>Metron Purchase Order System</title>
 <link rel="stylesheet" type="text/css" href="Default.css">
+<script type="text/JavaScript" src="jquery-3.2.1.min.js"></script>
+<script type="text/JavaScript" src="authorize.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,7 @@ include 'session_check.php'
 			Total Cost:<br>
 			<input type="number" name="quantity" min="0" step="0.01" required><br>
 			Quantity:<br>
-			<input type="number" name="quantity" min="0" required><br>
+			<input type="number" name="reason" min="0" required><br>
 			Reason for request:<br>
 			<textarea rows="4" cols="45" required></textarea><br>
 			Date needed:<br>
