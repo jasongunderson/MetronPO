@@ -9,11 +9,11 @@ alert ("JavaScript is working");
     $("#computer_type").change(function(){
     	event.preventDefault();
     	
-        var facility = $(facility).val();
-        var vendor = $(vendor).val();
-        var item = $(item).val();
-        var quantity = $(quantity).val();
-        var reason = $(reason).val();
+        // var facility = $(facility).val();
+        // var vendor = $(vendor).val();
+        // var item = $(item).val();
+        // var quantity = $(quantity).val();
+        // var reason = $(reason).val();
 
         // alert (facility." ".vendor." ".item." ".quantity." ".reason);
 
