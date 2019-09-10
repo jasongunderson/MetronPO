@@ -16,7 +16,7 @@ alert ("JavaScript is working");
         var quantity = $("#quantity").val();
         var reason = $("#reason").val();
 
-        // alert (facility." ".vendor." ".item." ".quantity." ".reason);
+        alert (facility." ".vendor." ".item." ".quantity." ".reason);
 
     //     $.ajax({
     //         url: 'http://10.1.25.9/inventory/listmodel.php',
