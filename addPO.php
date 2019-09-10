@@ -18,7 +18,7 @@ $value=$_SESSION["facility"];
         $statement->execute();
         $result =  $statement;
         foreach($result as $row){
-        	echo $row;
+        	echo $row[0];
         }
 
         // $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
