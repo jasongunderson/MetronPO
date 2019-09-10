@@ -10,7 +10,7 @@ include 'session_check.php'
 <title>Metron Purchase Order System</title>
 <link rel="stylesheet" type="text/css" href="Default.css">
 <script type="text/JavaScript" src="jquery-3.2.1.min.js"></script>
-<script type="text/JavaScript" src="authorize.js"></script>
+<!-- <script type="text/JavaScript" src="authorize.js"></script> -->
 </head>
 
 <body>
@@ -26,7 +26,7 @@ include 'session_check.php'
 	<!-- Main Purchase Order Form -->
 	<div class="createform">
 		<h1>Create Purchase Order</h1>
-		<form action="?" method="get">
+		<form action="/addPO.php" method="get">
 			Facility:<br>
 			<select id="facility" name="facility">
 				<option value="Belding">Belding</option>

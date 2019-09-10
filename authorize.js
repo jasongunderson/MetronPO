@@ -7,7 +7,7 @@ alert ("JavaScript is working");
 //----------------------------------------------------------------------------------------------------------
 
     $("#submit_button").click(function(){
-    	alert ("button click works");
+    	// alert ("button click works");
     	event.preventDefault();
 
         var facility = $("#facility").val();
