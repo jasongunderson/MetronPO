@@ -6,14 +6,15 @@ alert ("JavaScript is working");
 //---------------------------------------- Submit New PO Request--------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 
-    $("Submit").click(function(){
+    $("#submit_button").click(function(){
+    	alert ("button click works");
     	event.preventDefault();
 
-        var facility = $("facility").val();
-        var vendor = $("vendor").val();
-        var item = $("item").val();
-        var quantity = $("quantity").val();
-        var reason = $("reason").val();
+        var facility = $("#facility").val();
+        var vendor = $("#vendor").val();
+        var item = $("#item").val();
+        var quantity = $("#quantity").val();
+        var reason = $("#reason").val();
 
         // alert (facility." ".vendor." ".item." ".quantity." ".reason);
 

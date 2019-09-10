@@ -39,18 +39,19 @@ include 'session_check.php'
 				<option value="Lamont">Lamont</option>
 			</select><br>
 			Vendor name:<br>
-			<input type="text" name="vendor" required><br>
+			<input id="vendor" type="text" name="vendor" required><br>
 			Item description:<br>
-			<input type="text" name="item" required><br>
+			<input id="item" type="text" name="item" required><br>
 			Total Cost:<br>
-			<input type="number" name="quantity" min="0" step="0.01" required><br>
+			<input id "quantity"
+			type="number" name="quantity" min="0" step="0.01" required><br>
 			Quantity:<br>
-			<input type="number" name="reason" min="0" required><br>
+			<input id="reason" type="number" name="reason" min="0" required><br>
 			Reason for request:<br>
 			<textarea rows="4" cols="45" required></textarea><br>
 			Date needed:<br>
 			<input type="date" name="date2" style="width:10em" required><br>
-			<input type="submit" value="Submit" style="width:10em">
+			<input id="submit_button" type="submit" value="Submit" style="width:10em">
 		</form>
 	</div>
 </div>
