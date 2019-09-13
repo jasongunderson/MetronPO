@@ -21,9 +21,9 @@ $value=$_SESSION["facility"];
         	$rid=$row[0]+1;
         }
         echo ($rid."\n");
-        echo ($_SESSION["user"]."\n");
-        echo ($_SESSION["facility"]."\n");
-        echo ($_SESSION["department"]."\n");
+        // echo ($_SESSION["user"]."\n");
+        // echo ($_SESSION["facility"]."\n");
+        // echo ($_SESSION["department"]."\n");
         echo ("after Session variables\n");
 
 
