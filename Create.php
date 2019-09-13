@@ -26,7 +26,7 @@ include 'session_check.php'
 	<!-- Main Purchase Order Form -->
 	<div class="createform">
 		<h1>Create Purchase Order</h1>
-		<form action="/addPO.php" method="get">
+		<form action="/addPO.php" method="post">
 			Facility:<br>
 			<select id="facility" name="facility">
 				<option value="Belding">Belding</option>

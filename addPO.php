@@ -23,10 +23,28 @@ $value=$_SESSION["facility"];
         foreach($result as $row){
         	$rid=$row[0]+1;
         }
-        echo ($rid)."<br>";
-        echo ($_SESSION["user"]."<br>");
-        echo ($_SESSION["facility"]."<br>");
-        echo ($_SESSION["department"]."<br>");
+
+
+        $user=$_SESSION["user"];
+        $facility=$_SESSION["facility"];
+        $department=$_SESSION["department"];
+        $vendor=$_POST["vendor"];
+        $item=$_POST["item"];
+        $quantity=$_POST["quantity"];
+        $reason=$_POST["reason"];
+        $date2=$_POST[date2];
+
+
+        echo ("rid: ".$rid)."<br>";
+        echo ("User: ".$user."<br>");
+        echo ("Facility: ".$facility."<br>");
+        echo ("Departmetn: ".$department."<br>");
+        echo ("vendor: ".$vendor."<br>");
+        echo ("item: ".$item."<br>");
+        echo ("quantity: ".$quantity."<br>");
+        echo ("reason: ".$reason."<br>");
+        echo ("date2: ".$date2."<br>");
+
         echo ("after Session variables <br>");
 
 
