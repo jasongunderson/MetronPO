@@ -24,7 +24,7 @@ $value=$_SESSION["facility"];
         // echo ($_SESSION["user"]."\n");
         // echo ($_SESSION["facility"]."\n");
         // echo ($_SESSION["department"]."\n");
-        echo ("after Session variables\n");
+        // echo ("after Session variables\n");
 
 
 
