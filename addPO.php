@@ -19,7 +19,9 @@ $value=$_SESSION["facility"];
         $result =  $statement;
         foreach($result as $row){
         	echo $row[0];
+        	$top=$row[0];
         }
+        echo ($top+1);
 
         // $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
         // $statement = $pdo->prepare($sql);
