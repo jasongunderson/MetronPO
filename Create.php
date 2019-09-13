@@ -44,11 +44,11 @@ include 'session_check.php'
 			<input id="item" type="text" name="item" required><br>
 			Total Cost:<br>
 			<input id "quantity"
-			type="number" name="quantity" min="0" step="0.01" required><br>
+			type="number" name="cost" min="0" step="0.01" required><br>
 			Quantity:<br>
-			<input id="reason" type="number" name="reason" min="0" required><br>
+			<input id="reason" type="number" name="quantity" min="0" required><br>
 			Reason for request:<br>
-			<textarea rows="4" cols="45" required></textarea><br>
+			<textarea name="reason" rows="4" cols="45" required></textarea><br>
 			Date needed:<br>
 			<input type="date" name="date2" style="width:10em" required><br>
 			<input id="submit_button" type="submit" value="Submit" style="width:10em">
