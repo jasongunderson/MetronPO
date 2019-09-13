@@ -32,6 +32,7 @@ $value=$_SESSION["facility"];
         $item=$_POST["item"];
         $quantity=$_POST["quantity"];
         $reason=$_POST["reason"];
+        $date=date("Y-m-d");
         $date2=$_POST[date2];
 
 
@@ -43,6 +44,7 @@ $value=$_SESSION["facility"];
         echo ("item: ".$item."<br>");
         echo ("quantity: ".$quantity."<br>");
         echo ("reason: ".$reason."<br>");
+        echo ("date: ".$date."<br>");
         echo ("date2: ".$date2."<br>");
 
         echo ("after Session variables <br>");
@@ -51,7 +53,17 @@ $value=$_SESSION["facility"];
 
         // $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
         // $statement = $pdo->prepare($sql);
-        // $statement->bindValue(1, $value); 
+        // $statement->bindValue(1, $rid);
+        // $statement->bindValue(2, $user);
+        // $statement->bindValue(3, $facility);
+        // $statement->bindValue(4, $department);
+        // $statement->bindValue(5, $vendor);
+        // $statement->bindValue(6, $item);
+        // $statement->bindValue(7, $quantity);
+        // $statement->bindValue(8, $reason);
+        // $statement->bindValue(9, $);
+        // $statement->bindValue(10, $);
+        // $statement->bindValue(11, $date2); 
 
         // $statement->execute();
         // $pdo = null;
