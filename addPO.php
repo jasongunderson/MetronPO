@@ -20,11 +20,11 @@ $value=$_SESSION["facility"];
         foreach($result as $row){
         	$rid=$row[0]+1;
         }
-        echo ($rid)."\n";
-        echo ($_SESSION["user"]."\n");
-        echo ($_SESSION["facility"]."\n");
-        echo ($_SESSION["department"]."\n");
-        echo ("after Session variables\n");
+        echo ($rid)."<br>";
+        echo ($_SESSION["user"]."<br>");
+        echo ($_SESSION["facility"]."<br>");
+        echo ($_SESSION["department"]."<br>");
+        echo ("after Session variables <br>");
 
 
 
