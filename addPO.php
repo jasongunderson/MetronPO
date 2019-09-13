@@ -37,19 +37,19 @@ $value=$_SESSION["facility"];
         $date2=$_POST[date2];
 
 
-        echo ("rid: ".$rid)."<br>";
-        echo ("User: ".$user."<br>");
-        echo ("Facility: ".$facility."<br>");
-        echo ("Departmetn: ".$department."<br>");
-        echo ("vendor: ".$vendor."<br>");
-        echo ("item: ".$item."<br>");
-        echo ("cost: $".$cost."<br>");
-        echo ("quantity: ".$quantity."<br>");
-        echo ("reason: ".$reason."<br>");
-        echo ("date: ".$date."<br>");
-        echo ("date2: ".$date2."<br>");
+        // echo ("rid: ".$rid)."<br>";
+        // echo ("User: ".$user."<br>");
+        // echo ("Facility: ".$facility."<br>");
+        // echo ("Departmetn: ".$department."<br>");
+        // echo ("vendor: ".$vendor."<br>");
+        // echo ("item: ".$item."<br>");
+        // echo ("cost: $".$cost."<br>");
+        // echo ("quantity: ".$quantity."<br>");
+        // echo ("reason: ".$reason."<br>");
+        // echo ("date: ".$date."<br>");
+        // echo ("date2: ".$date2."<br>");
 
-        echo ("after Session variables <br>");
+        // echo ("after Session variables <br>");
 
 
 
@@ -69,6 +69,8 @@ $value=$_SESSION["facility"];
 
         $statement->execute();
         $pdo = null;
+
+        header("Location: Create.php");
 
         // $result =  $statement;
         // foreach($result as $row){
