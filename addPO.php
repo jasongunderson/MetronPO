@@ -53,22 +53,22 @@ $value=$_SESSION["facility"];
 
 
 
-        // $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
-        // $statement = $pdo->prepare($sql);
-        // $statement->bindValue(1, $rid);
-        // $statement->bindValue(2, $user);
-        // $statement->bindValue(3, $facility);
-        // $statement->bindValue(4, $department);
-        // $statement->bindValue(5, $vendor);
-        // $statement->bindValue(6, $item);
-        // $statement->bindValue(7, $quantity);
-        // $statement->bindValue(8, $reason);
-        // $statement->bindValue(9, $cost);
-        // $statement->bindValue(10, $date);
-        // $statement->bindValue(11, $date2); 
+        $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+        $statement = $pdo->prepare($sql);
+        $statement->bindValue(1, $rid);
+        $statement->bindValue(2, $user);
+        $statement->bindValue(3, $facility);
+        $statement->bindValue(4, $department);
+        $statement->bindValue(5, $vendor);
+        $statement->bindValue(6, $item);
+        $statement->bindValue(7, $quantity);
+        $statement->bindValue(8, $reason);
+        $statement->bindValue(9, $cost);
+        $statement->bindValue(10, $date);
+        $statement->bindValue(11, $date2); 
 
-        // $statement->execute();
-        // $pdo = null;
+        $statement->execute();
+        $pdo = null;
 
         // $result =  $statement;
         // foreach($result as $row){
