@@ -18,10 +18,14 @@ $value=$_SESSION["facility"];
         $statement->execute();
         $result =  $statement;
         foreach($result as $row){
-        	echo $row[0];
-        	$top=$row[0];
+        	$rid=$row[0]+1;
         }
-        echo ($top+1);
+        echo ($rid."\n");
+        echo ($_SESSION["user"]."\n");
+        echo ($_SESSION["facility"]."\n");
+        echo ($_SESSION["department"]."\n");
+
+
 
         // $sql = "INSERT INTO requests(rid,uid,facility,department,vendor,description,quantity,reason,cost,date_submit,date_needed) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
         // $statement = $pdo->prepare($sql);
