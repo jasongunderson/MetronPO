@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style type="text/css">
+#Bodystyle {
+  background-color: #0f0d31;
+}
+
+#Mainstyle {
+  background-color: white;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+#ContentStyle {
+  display: grid;
+  -webkit-grid-auto-flow: column;
+  grid-auto-flow: column;
+}
+
+#NavStyle {
+  background-color: #3e3c3a;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+#Navfont {
+  color: white;
+}
+
+#Header {
+  display: grid;
+  -webkit-grid-auto-flow: column;
+  grid-auto-flow: column;
+}
+
+#Headerfont {
+  font-size: 30pt;
+}
+
+#NavList {
+  display: grid;
+  -webkit-grid-auto-flow: column;
+  grid-auto-flow: column;
+}
+
+#Manarticals {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#commandsborders {
+  border-bottom-color: #33ccff;
+  border-top-color: #33ccff;
+  border-right-color: #33ccff;
+  border-left-color: #33ccff;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: dashed;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+}
+      
+
+</style></head>
+  <body id="Bodystyle" style="    background-color: #2e0331;">
+    <div id="Mainstyle" style="text-align: center;">
+      <div style="text-align: center; background-color: #474647;" id="Header">
+        <div style="text-align: left; width: 113px;"><img src="images/metronlogo.jpg"
+            alt="Metron" title="metronlogo"></div>
+        <p style="text-align: center; width: 487px; margin-left: 8px;"> <span style="color: #b32cb3;"
+            id="Headerfont">M<span style="color: #fdc80c;">e</span>tron Wiki </span></p>
+        <div style="margin-left: -81px;"> </div>
+      </div>
+      <nav id="NavStyle" style="background-color: #3a393a;">
+        <ul id="NavList">
+          <li>How To</li>
+          <li>Documentation</li>
+          <li>Directory</li>
+        </ul>
+      </nav>
+      <div id="ContentStyle">
+        <div id="Manarticals" style="width: 600px;">
+          <section>
+            <p style="text-align: left;"><b><u>Creating CA and Certs<br>
+                </u></b></p>
+          </section>
+          <article>
+            <p style="text-align: left;">To Create a CA, you need to create a
+              key for it first.</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl genrsa -des3 -out ca.key 4096</span></p>
+            <p style="text-align: left;"> </p>
+            <pre class="system" style="margin: 0px 0px 0px; padding: 9px; font-family: &quot;Courier New&quot;, Courier, mono; line-height: 12px; 
+              		overflow-wrap: break-word; background-color: rgb(245, 245, 245); border-color: rgb(204, 204, 204); border-radius: 4px; border-style: solid; 
+                  border-width: 1px; box-sizing: border-box; color: black; display: block; font-size: 12px; overflow: auto; word-break: break-all; 
+                  white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; 
+                  orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; 
+                  text-decoration-style: initial; text-decoration-color: initial;"><code
+spellcheck="false" style="margin: 0px; padding: 0px; font-style: inherit; font-weight: inherit; font-family: monospace; line-height: 12px;">computer ssl # openssl genrsa -des3 -out ca.key 4096<br>Generating RSA private key, 4096 bit long modulus<br>.........................................................++<br>...........................................................<br>...........................................................<br>...........................................................<br>...++<br>e is 65537 (0x10001)<br>Enter pass phrase for ca.key:<br>Verifying - Enter pass phrase for ca.key:<br>ctest-System-Product-Name ssl #<br></code></pre>
+            <p style="text-align: left; width: 605px;"></p>
+            <p style="text-align: left;"><br>
+              Afterwords create the CA using the key you just generated:</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl req -new -x509 -days 365 -key ca.key -out
+                ca.crt</span></p>
+            <p style="text-align: left;">You will then be asked for the CA's
+              Common Name must be different<br>
+              from the Common Name used in the Certificate later.</p>
+            <pre class="system" style="margin: 0px 0px 0px; padding: 9px; font-family: &quot;Courier New&quot;, Courier, mono; line-height: 12px; 
+              		overflow-wrap: break-word; background-color: rgb(245, 245, 245); border-color: rgb(204, 204, 204); border-radius: 4px; border-style: solid; 
+                  border-width: 1px; box-sizing: border-box; color: black; display: block; font-size: 12px; overflow: auto; word-break: break-all; 
+                  white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; 
+                  orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; 
+                  text-decoration-style: initial; text-decoration-color: initial;"><code
+spellcheck="false" style="margin: 0px; padding: 0px; font-style: inherit; font-weight: inherit; font-family: monospace; line-height: 12px;">
+computer ssl # openssl req -new -x509 -days 365 -key ca.key -out ca.crt<br>Enter pass phrase for ca.key:<br>You are about to be asked to enter information that will be incorporated<br>into your certificate request.<br>What you are about to enter is what is called a Distinguisshed Name or a DN.<br>There are quite a few fields but you can leave some blank<br>For some fields there will be a default value,<br>If you enter '.', the field will be left blank.<br>-----<br>Country Name (2 letter code) [AU]:<br>State or Province Name (full name) [Some-State]:<br>Locality Name (eg, city) []:<br>Organization Name (eg, company) [Internet Widgits Pty Ltd]:<br>Organizational Unit Name (eg, section) []:<br>Common Name (eg, YOUR name) []:  <br>Email Address []:<br>ctest-System-Product-Name ssl # </code></pre>
+            <p style="text-align: left; width: 605px;"></p>
+            <p style="text-align: left;"><br>
+              The following steps are similar to those in chapter 2.2. You
+              create a certificate key</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl genrsa -des3 -out cert.key 4096</span></p>
+            <p style="text-align: left;"><br>
+              and a certificate signing request (the Common Name attribute
+              usually covers the server name, but do not enter a known
+              servername as smtp.gmail.com here - trusted servers are usually
+              already known by your client and therefore it will think of your
+              certificate as identity theft! Basically, anything else that you
+              enter should work. Make sure to spell your email address
+              correctly):</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl req -new -key cert.key -out
+                cert.csr</span></p>
+            <p style="text-align: left;"><br>
+              Now comes the signing. Instead of signing it yourself, you use the
+              certificate authority you created earlier:</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl x509 -req -days 365 -in cert.csr
+                -CA ca.crt -CAkey ca.key -set_serial 00 -out cert.crt</span></p>
+            <pre class="system" style="margin: 0px 0px 0px; padding: 9px; font-family: &quot;Courier New&quot;, Courier, mono; line-height: 12px; 
+              		overflow-wrap: break-word; background-color: rgb(245, 245, 245); border-color: rgb(204, 204, 204); border-radius: 4px; border-style: solid; 
+                  border-width: 1px; box-sizing: border-box; color: black; display: block; font-size: 12px; overflow: auto; word-break: break-all; 
+                  white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; 
+                  orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; 
+                  text-decoration-style: initial; text-decoration-color: initial;"><code
+spellcheck="false" style="margin: 0px; padding: 0px; font-style: inherit; font-weight: inherit; font-family: monospace; line-height: 12px;">computer ssl # openssl x509 -req -days 365 -in cert.csr -CA ca.crt -CAkey ca.key<br> -set_serial 00 -out cert.crt<br>Signature ok<br>subject=/C=AU/ST=Some-State/O=Internet Widgits Pty Ltd<br>Getting CA Private Key<br>Enter pass phrase for ca.key:<br>computer ssl #</code></pre>
+            <p style="text-align: left;"><br>
+              Generally, the signed certificate is created now, but we need to
+              do one more step to be able to use it on our mail clients. These
+              expect the certificates to be in the .p12 format, which is why we
+              need to convert them. Do so with (replace Your Name with something
+              serious, your name for example):</p>
+            <p style="text-align: left;">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              <span style="color: black; font-family: &quot;Courier New&quot;,Courier,mono; font-size: 16px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f9f9f9; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"
+                id="commandsborders">openssl pkcs12 -export -in cert.crt -inkey
+                cert.key -name "Your Name" -out cert.p12</span></p>
+            <p style="text-align: left;"><br>
+              The export password you will be prompted with needs to be entered
+              on importing and exporting the certificate into clients, be sure
+              to remember it:</p>
+            <pre class="system" style="margin: 0px 0px 0px; padding: 9px; font-family: &quot;Courier New&quot;, Courier, mono; line-height: 12px; 
+              		overflow-wrap: break-word; background-color: rgb(245, 245, 245); border-color: rgb(204, 204, 204); border-radius: 4px; border-style: solid; 
+                  border-width: 1px; box-sizing: border-box; color: black; display: block; font-size: 12px; overflow: auto; word-break: break-all; 
+                  white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; 
+                  orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; 
+                  text-decoration-style: initial; text-decoration-color: initial;"><code
+spellcheck="false" style="margin: 0px; padding: 0px; font-style: inherit; font-weight: inherit; font-family: monospace; line-height: 12px;">computer ssl # openssl pkcs12 -export -in cert.crt -inkey cert.key -name "Your Name" -out cert.p12<br>Enter pass phrase for cert.key:<br>Enter Export Password:<br>Verifying - Enter Export Password:<br>computer ssl # </code></pre>
+            <p style="text-align: left;"><br>
+              You should now have six files in your working directory. Check
+              that by listing the directory's content:</p>
+            <pre class="system" style="margin: 0px 0px 0px; padding: 9px; font-family: &quot;Courier New&quot;, Courier, mono; line-height: 12px; 
+              		overflow-wrap: break-word; background-color: rgb(245, 245, 245); border-color: rgb(204, 204, 204); border-radius: 4px; border-style: solid; 
+                  border-width: 1px; box-sizing: border-box; color: black; display: block; font-size: 12px; overflow: auto; word-break: break-all; 
+                  white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; 
+                  orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; 
+                  text-decoration-style: initial; text-decoration-color: initial;"><code
+spellcheck="false" style="margin: 0px; padding: 0px; font-style: inherit; font-weight: inherit; font-family: monospace; line-height: 12px;">computer ssl # ls -l<br>total 28<br>-rw-r--r-- 1 root root 2041 2011-11-28 13:44 ca.crt<br>-rw-r--r-- 1 root root 3311 2011-11-28 13:43 ca.key<br>-rw-r--r-- 1 root root 1793 2011-11-28 13:45 cert.crt<br>-rw-r--r-- 1 root root 1651 2011-11-28 13:44 cert.csr<br>-rw-r--r-- 1 root root 3311 2011-11-28 13:44 cert.key<br>-rw-r--r-- 1 root root 4122 2011-11-28 13:45 cert.p12<br>ccomputer ssl # </code></pre>
+            <p style="text-align: left;"><br>
+              If any of those files is missing, you have missed a step or made
+              mistake somewhere.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
