@@ -60,13 +60,15 @@ include 'session_check.php'
           $result =  $statement;
              foreach($result as $row){
                 // If cost is under $500 and admin has signed off then highlight
-             	if(($row[5]<500) && (!empty($row[9]))){
-             		$style="style=\"background-color: #4dff4d\"";
+		     if($row[5]<500){
+			     if(!empty($row[9])){
+				     $style="style=\"background-color: #4dff4d\"";
+				}
              	}
                 // If cost is under $5,000 and COO has signed off then highlight
              	elseif ($row[5]<5000) {
              		if(!empty($row[10])){
-             		$style="style=\"background-color: #4dff4d\"";
+             			$style="style=\"background-color: #4dff4d\"";
                     }
                  }
              	elseif (!empty($row[11])) {
